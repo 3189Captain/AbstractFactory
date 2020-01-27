@@ -53,7 +53,7 @@ public class NPCSpawner : MonoBehaviour
         {
             m_Shopowner = factory.GetHuman(HumanType.Shopowner);
             m_Shopowner.Speak();
-            GameObject shopownerInstance = Instantiate(Resources.Load("Shopowner", typeof(GameObject))) as GameObject;
+            GameObject shopownerInstance = Instantiate(Resources.Load("Shopkeeper", typeof(GameObject))) as GameObject;
             shopownerInstance.transform.position = new Vector3((Random.Range(-10f, 10f)), 0, 0);
         }
         
